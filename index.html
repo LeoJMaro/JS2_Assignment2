@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>CNA RAIL SYSTEM</h1>
+	<form id="BoxCarForm">
+		<div>
+			<label for="BoxCarID">Box Car ID:
+				<input id="BoxCarID" readonly="readonly">
+				<span></span>
+			</label>
+		</div>
+		<div>
+			<label for="EmptyWeight">Empty Weight:
+				<input id="EmptyWeight" readonly="readonly">
+				<span></span>
+			</label>
+		</div>
+		<div>
+			<label for="MaxWeight">Max Weight:
+				<input id="MaxWeight" readonly="readonly">
+				<span></span>
+			</label>
+		</div>
+		<div>
+			<label for="TotalWeight">Current Weight:
+				<input id="TotalWeight" readonly="readonly" >
+				<span></span>
+			</label>
+		</div>
+		<button> Process Box Car</button>
+		<button>Reset Form </button>
+		</form>
+	<form id="ProcessCargoForm">
+		<div>
+			<label for="TransportID">Transport ID:
+				<input id="TransportID">
+				<span class="error" aria-live="polite"></span>
+			</label>
+		</div>
+		<div>
+			<label for="Description">Description:
+				<input id="Description">
+				<span class="error" aria-live="polite"></span>
+			</label>
+		</div>
+		<div>
+			<label for="CargoWeight">Cargo Weight:
+				<input id="CargoWeight">
+				<span class="error" aria-live="polite"></span>
+			</label>
+		</div>
+			<button id="button_id">Process Cargo</button>
+			<button id="button_id2">Reset Form</button>
+	</form>
+	<H3>Cargo Status</H3>
+		<h4>Transport ID Description Weight Status</h4>
+			<p>None</p>
+		<h4>Transport ID Description Weight</h4>
+			<p>None</p>
+	<script src="process_cargo.js"></script>
+</body>
+
+</html>
